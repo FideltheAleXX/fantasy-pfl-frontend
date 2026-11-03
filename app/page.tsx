@@ -12,22 +12,25 @@ export default function Home() {
     { id: 5, title: 'Статистика' },
   ];
   return (
-    <div className="flex min-h-screen flex-col bg-[#f8fdef] text-[#151614]">
+    <div className="flex min-h-screen flex-col bg-(--card-bg) text-(--main-text)">
       <Header />
 
       <main>
-        <nav aria-label="Розділи" className="mb-6 border-b border-[#cbcfc3]">
+        <nav
+          aria-label="Розділи"
+          className="mb-6 border-b border-(--color-base-300)"
+        >
           <ul className="flex flex-wrap gap-x-6 gap-y-2">
             {navs.map((nav) => {
               return (
-                <li key={nav.id} className="pb-3 text-[#55574f]">
+                <li key={nav.id} className="pb-3 text-(--main-text)">
                   {nav.title}
                 </li>
               );
             })}
           </ul>
         </nav>
-        <div className="mx-auto grid w-full max-w-7xl flex-1 grid-cols-1 gap-8 px-2 py-2 md:grid-cols-[1fr_2fr]">
+        <div className="mx-auto grid w-full max-w-7xl flex-1 grid-cols-1 gap-2 py-2 md:grid-cols-[1fr_2fr]">
           <HomeSidebar />
           <MainFieldSection />
         </div>

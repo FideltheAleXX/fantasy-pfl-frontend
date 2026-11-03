@@ -1,4 +1,5 @@
 import Link from 'next/link';
+import { Button } from '@/components/ui/button';
 
 export default function Header() {
   const menuItems = [
@@ -23,14 +24,9 @@ export default function Header() {
             {menuItems.map((item) => {
               return (
                 <li key={item.id}>
-                  <button>
-                    <Link
-                      className="text-[#343300] transition-colors hover:text-[#419400]"
-                      href={item.link}
-                    >
-                      {item.title}
-                    </Link>
-                  </button>
+                  <Button variant="secondary">
+                    <Link href={item.link}>{item.title}</Link>
+                  </Button>
                 </li>
               );
             })}

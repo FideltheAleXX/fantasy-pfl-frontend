@@ -1,35 +1,38 @@
 @import 'tailwindcss';
-@import "tw-animate-css";
-@import "shadcn/tailwind.css";
+@import 'tw-animate-css';
+@import 'shadcn/tailwind.css';
 
 @custom-variant dark (&:is(.dark *));
 
 :root {
-  --color-base-100: #f8fdef;
+  --card-bg: #f8fdef;
   --main-bg: #e1e6d9;
   --color-base-300: #cbcfc3;
-  --main-font: #151614;
-  --color-primary: #419400;
-  --color-primary-content: #010800;
+  --main-text: #151614;
+  --field: #419400;
+  --field-text: #010800;
+
   --color-secondary: #bdc000;
   --color-secondary-content: #0d0e00;
   --color-accent: #edd000;
   --color-accent-content: #141000;
+
   --color-button: #343300;
   --color-button-text: #d2d3c7;
   --color-info: #b1d9e9;
-  --color-info-content: #0c1113;
+  --color-info-text: #0c1113;
   --color-success: #b9dbc6;
-  --color-success-content: #0d110e;
+  --color-success-text: #0d110e;
   --color-warning: #d7d3b0;
-  --color-warning-content: #11100c;
+  --color-warning-text: #11100c;
   --color-error: #efc6c2;
-  --color-error-content: #140e0e;
+  --color-error-text: #140e0e;
   --radius-selector: 1rem;
   --radius-field: 0.5rem;
   --radius-box: 1rem;
   --size-selector: 0.25rem;
   --size-field: 0.25rem;
+
   --border: oklch(0.922 0 0);
   --depth: 0;
   --noise: 0;
@@ -41,8 +44,8 @@
   --popover-foreground: oklch(0.145 0 0);
   --primary: oklch(0.205 0 0);
   --primary-foreground: oklch(0.985 0 0);
-  --secondary: oklch(0.97 0 0);
-  --secondary-foreground: oklch(0.205 0 0);
+  --secondary: #343300;
+  --secondary-foreground: #d2d3c7;
   --muted: oklch(0.97 0 0);
   --muted-foreground: oklch(0.556 0 0);
   --accent: oklch(0.97 0 0);
